@@ -1,0 +1,299 @@
+/* Reset general de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilos del body */
+body {
+    line-height: 1.6;
+    background-color: rgb(5, 43, 58);
+    color: white;
+}
+
+/* Encabezado */
+.contenedor-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#nav ul li {
+    margin-left: 20px;
+}
+
+#nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+#nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Responsive navigation */
+.nav-responsive {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#nav.active ul {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #nav ul {
+        display: none;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+}
+
+/* Secciones */
+.seccion {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Inicio */
+.inicio {
+    background-color: #1cb698;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.inicio .presentacion {
+    background-color: #d1cbcb;
+    color: #333;
+    padding: 70px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.inicio .foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.inicio h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.inicio p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.inicio .redes-sociales a {
+    color: rgb(18, 18, 88);
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.inicio .redes-sociales a:hover {
+    color: #333;
+}
+
+/* Sobre Mí */
+#sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+#sobremi h2 {
+    text-align: center;
+}
+
+#sobremi p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* Ajustes de la lista */
+.icon-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan a la siguiente línea si es necesario */
+}
+
+.icon-list li {
+    margin-bottom: 12px;
+    margin-right: 20px;
+    /* Espacio entre los elementos */
+    display: inline-block;
+}
+
+.icon-list i {
+    margin-right: 10px;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 20px;
+    text-align: center;
+}
+
+.skill img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.skill-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-info span {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.puntos {
+    display: flex;
+}
+
+.punto {
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.punto.activo {
+    background-color: #ff4b2b;
+}
+
+/* Curriculum */
+#cv h4 {
+    font-size: 45px;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.education-item {
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .education-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Portafolio */
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#portafolio h2 {
+    font-size: 35px;
+}
+
+.proyecto {
+    background-color: #fff;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 45%;
+    box-sizing: border-box;
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .proyecto {
+        max-width: 100%;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
